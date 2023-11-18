@@ -21,7 +21,7 @@ Here's a short summary of each of the projects in this repo and the features the
 * DemoYARP.HeaderRouter (WIP) - YARP has a bunch of built-in routing policies. This project shows how to use the header
   routing policy
   with a tenant header to route to different backends for each tenant.
-* DemoYARP.Transforms (WIP) - This project shows you how to rewrite your requests and responses using the built-in transforms.
+* DemoYARP.Transforms (WIP) - This project shows you how to transform your requests and responses using the built-in features.
 * DemoYARP.BlueGreen - A basic example of a blue-green deployment setup using YARP. This project also shows you
   how you can
   change the
