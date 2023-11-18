@@ -39,7 +39,7 @@ that are used to test the YARP configuration. They are:
 * DemoYarp.sitetwo
 
 These are just two Blazor WASM sites so the YARP projects have something to proxy to. They do not contain any special
-logic or features.
+logic or features (unless you count pictures of cats).
 
 
 
