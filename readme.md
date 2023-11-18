@@ -22,7 +22,7 @@ Here's a short summary of each of the projects in this repo and the features the
   routing policy
   with a tenant header to route to different backends.
 * DemoYARP.Transforms (WIP) - This project shows you how to rewrite your requests and responses using the built-in transforms.
-* DemoYARP.BlueGreen - A (very basic) example of a blue-green deployment setup using YARP. This project also shows you
+* DemoYARP.BlueGreen - A basic example of a blue-green deployment setup using YARP. This project also shows you
   how you can
   change the
   configuration of YARP at runtime, and exposes an API endpoint in the proxy to switch between the blue and green
