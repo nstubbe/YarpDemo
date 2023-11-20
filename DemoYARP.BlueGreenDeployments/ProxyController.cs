@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Yarp.ReverseProxy.Configuration;
 
-namespace DemoYARP.bluegreen;
+namespace DemoYARP.BlueGreenDeployments;
 
 [ApiController]
 [Route("[controller]")]

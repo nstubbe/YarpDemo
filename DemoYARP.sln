@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoYARP.bluegreen", "DemoYARP.bluegreen\DemoYARP.bluegreen.csproj", "{791CDD94-ADE3-49FC-BFEE-37E05124292D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoYARP.BlueGreenDeployments", "DemoYARP.BlueGreenDeployments\DemoYARP.BlueGreenDeployments.csproj", "{791CDD94-ADE3-49FC-BFEE-37E05124292D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.BlueGreen", "5.BlueGreen", "{BEECD2EB-B3E9-4E17-B330-D2CCE8C8B9B3}"
 EndProject
@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.AuthenticationAndAuthoriz
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.ReverseProxy", "1.ReverseProxy", "{0208971D-4CFA-402C-835D-FE98600E3596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoYARP.reverseproxy", "DemoYARP.reverseproxy\DemoYARP.reverseproxy.csproj", "{70E02F5E-DE5B-4FB9-BEC5-3AF73BAEDD88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoYARP.BasicSetup", "DemoYARP.BasicSetup\DemoYARP.BasicSetup.csproj", "{70E02F5E-DE5B-4FB9-BEC5-3AF73BAEDD88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoYARP.site", "DemoYARP.site\DemoYARP.site.csproj", "{EB101D61-D0E4-457C-A480-86BCF950069B}"
 EndProject

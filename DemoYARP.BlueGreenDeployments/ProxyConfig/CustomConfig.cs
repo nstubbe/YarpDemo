@@ -4,11 +4,11 @@ using Yarp.ReverseProxy.Configuration;
 namespace DemoYARP.bluegreen.ProxyConfig;
 
 /// <summary>
-/// Using a custom config provider allows us to change the config at runtime.
+///     Using a custom config provider allows us to change the config at runtime.
 /// </summary>
 public class CustomConfig : IProxyConfig
 {
-    private readonly CancellationTokenSource _cts = new CancellationTokenSource();
+    private readonly CancellationTokenSource _cts = new();
 
     public CustomConfig(IReadOnlyList<RouteConfig> routes, IReadOnlyList<ClusterConfig> clusters)
     {

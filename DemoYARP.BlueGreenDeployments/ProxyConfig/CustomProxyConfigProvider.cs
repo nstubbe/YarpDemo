@@ -3,20 +3,20 @@
 namespace DemoYARP.bluegreen.ProxyConfig;
 
 /// <summary>
-/// This class is used to create a custom config provider for the YARP reverse proxy.
-/// You will notice that it contains a lot of configuration that is normally read from appsettings.json.
-/// We are loading the config from code instead of from appsettings.json to allow us to change the config at runtime.
-/// You could also load the config from another data source, such as a database or a file.
+///     This class is used to create a custom config provider for the YARP reverse proxy.
+///     You will notice that it contains a lot of configuration that is normally read from appsettings.json.
+///     We are loading the config from code instead of from appsettings.json to allow us to change the config at runtime.
+///     You could also load the config from another data source, such as a database or a file.
 /// </summary>
 public class CustomProxyConfigProvider : IProxyConfigProvider
 {
     private const string BlueClusterId = "BlueCluster";
     private const string GreenClusterId = "GreenCluster";
     private const string AppRouteId = "AppRoute";
-    
+
     private const string BlueAddress = "http://localhost:5271/";
     private const string GreenAddress = "http://localhost:5200/";
-    
+
     /// The config for the app clusters. There are two: a blue and a green cluster.
     /// Only one will be active at a time.
     private readonly ClusterConfig[] _appClusterConfigs =
@@ -26,7 +26,7 @@ public class CustomProxyConfigProvider : IProxyConfigProvider
             ClusterId = BlueClusterId,
             Destinations = new Dictionary<string, DestinationConfig>
             {
-                { "blue", new DestinationConfig { Address = BlueAddress } },
+                { "blue", new DestinationConfig { Address = BlueAddress } }
             }
         },
         new()
@@ -47,14 +47,14 @@ public class CustomProxyConfigProvider : IProxyConfigProvider
         Match = new RouteMatch
         {
             Path = "{**catch-all}"
-        },
+        }
     };
 
     private CustomConfig _config;
 
     public CustomProxyConfigProvider()
     {
-        var routeConfigs = new[] {_appRouteConfig };
+        var routeConfigs = new[] { _appRouteConfig };
         _config = new CustomConfig(routeConfigs, _appClusterConfigs);
     }
 
