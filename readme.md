@@ -16,8 +16,8 @@ More on YARP can be found here: https://microsoft.github.io/reverse-proxy/
 Here's a short summary of each of the projects in this repo and the features they demonstrate:
 
 * DemoYARP.BasicSetup - A basic reverse proxy that shows a very simple direct forwarding configuration.
-* DemoYARP.LoadBalancer (WIP) - Gives an example of how to use the YARP middleware to implement a load balancer.
-* DemoYARP.HeaderRouter (WIP) - YARP has a bunch of built-in routing policies. This project shows how to use the header
+* DemoYARP.LoadBalancer - Gives an example of how to use the YARP middleware to implement a load balancer.
+* DemoYARP.HeaderRouter - YARP has a bunch of built-in routing policies. This project shows how to use the header
   routing policy
   with a tenant header to route to different backends for each tenant.
 * DemoYARP.Transforms (WIP) - This project shows you how to transform your requests and responses using the built-in
