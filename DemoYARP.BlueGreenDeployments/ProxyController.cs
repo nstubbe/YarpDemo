@@ -18,7 +18,7 @@ public class ProxyController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Switch()
     {
-        var newClusterId = _proxyConfigProvider.SwitchCluster();
-        return Ok(new { newClusterId });
+        _proxyConfigProvider.SwitchDestination();
+        return Ok();
     }
 }
